@@ -188,9 +188,7 @@ def main():
         data = json.load(f)
         
     # Initialize the model
-    # Note: Using the model from the example, change back to Qwen if needed.
-    # llm = LLM(model="Qwen/Qwen2.5-7B")
-    llm = LLM(model="facebook/opt-125m") 
+    llm = LLM(model="Qwen/Qwen2.5-7B")
     
     filtered_data = {}
     question_hardness = {}

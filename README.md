@@ -2,6 +2,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2504.00369-b31b1b.svg)](https://arxiv.org/abs/2504.00369)
 [![Dataset on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-md.svg)]([https://huggingface.co/datasets](https://huggingface.co/datasets/yongyizang/RUListening))
 
+## Updates
+- 08/18/2025: Updated the PI Filtering script by using a better normalization scheme, and using a more efficient GuidedDecodingParams way to get the raw logprobs of the choices (Thanks, [Yuanjun Lv](https://github.com/BakerBunker)!)
+
 
 ## Getting Started
 If you are only using this repository for evaluation, you don't need to install anything. Just download the `RUL-MuchoMusic.json` file, and reference the python scripts in `ExampleAudioEval` folder; we provide example scripts to run evaluation on both Qwen2-Audio and Qwen-Audio. We recommend using the `leave-one-out` evaluation method; additionally, we recommend reporting evaluation results on random gaussian noise alongside with the original audio.
